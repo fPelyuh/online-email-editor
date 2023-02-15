@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "react-app"
+  ],
+  "plugins": [
+    "react-hooks",
+    "no-storage"
+  ],
+  "rules": {
+    "react-hooks/exhaustive-deps": "error",
+    "no-storage/no-browser-storage": 2,
+    "no-console": "error"
+  }
+}

@@ -1,0 +1,11 @@
+.idea
+node_modules
+build
+
+*.local
+.env.production
+
+# rollup-plugin-visualizer
+stats.html
+# @nabla/vite-plugin-eslint
+.eslintcache

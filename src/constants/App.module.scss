@@ -1,0 +1,40 @@
+.wrapper {
+
+}
+
+.buttons {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background-color: #323232;
+  width: 424px;
+  display: flex;
+  justify-content: flex-end;
+  transition: 0.3s;
+  @media screen and (max-width: 1168px) {
+    width: 350px;
+  }
+}
+
+.exportButton {
+  background-color: #323232;
+  color: #FFFFFF;
+  border: none;
+  padding: 16px 20px;
+  font-size: 14px;
+  line-height: 18px;
+  transition: 0.3s;
+  border-left: 1px solid #828282;
+  &:hover {
+    background-color: #464646;
+  }
+}
+
+.warningMessage {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  margin: 50px auto;
+  height: 27px;
+}
