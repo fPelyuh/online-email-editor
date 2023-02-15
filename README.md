@@ -2,3 +2,4 @@
 Тестовая сборка фреймворка для верстки писем на основе [react-email-editor](https://examples.unlayer.com/email/simple-email/)
 - [Документация](https://docs.unlayer.com/docs/getting-started)
 - [Пример](https://examples.unlayer.com/email/simple-email/)
+- [Ссылка на git](https://github.com/unlayer/react-email-editor)
