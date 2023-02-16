@@ -3,3 +3,5 @@
 - [Документация](https://docs.unlayer.com/docs/getting-started)
 - [Демо](https://react-email-editor-demo.netlify.app)
 - [Ссылка на git](https://github.com/unlayer/react-email-editor)
+
+!!! Работает на node 16.x
