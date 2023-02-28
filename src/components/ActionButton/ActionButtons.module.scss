@@ -1,0 +1,100 @@
+.actionButtons {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 32px;
+  display: flex;
+  justify-content: flex-end;
+  transition: 0.3s;
+  transform: translateY(-101%);
+  &.isOpen {
+    transform: translateY(0%);
+  }
+}
+
+
+.exportButton {
+  cursor: pointer;
+  background-color: #323232;
+  color: #FFFFFF;
+  border: none;
+  padding: 16px 20px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  transition: 0.3s;
+  text-decoration: none;
+
+  &:not(:last-child) {
+    border-right: 1px solid #828282;
+  }
+  &:hover {
+    background-color: #464646;
+  }
+}
+
+.toggleWrapper {
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+.toggleButton {
+  cursor: pointer;
+  position: absolute;
+  transform: rotate(45deg);
+  width: 36px;
+  height: 35px;
+  background-color: #FFFFFF;
+  border: 8px solid #323232;
+  top: 15px;
+  left: 10px;
+  transition: 0.3s;
+  z-index: 1;
+  &.success {
+    animation-name: Pulsar;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+  &.error {
+    animation-name: Pulsar;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes Pulsar {
+  0% {background-color: #FFFFFF;}
+  50% {background-color: #5fff53;}
+  100% {background-color: #FFFFFF;}
+}
+
+.transparent {
+  width: 56px;
+  height: 28px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  overflow: hidden;
+  &:before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    transform: rotate(45deg);
+    background-color: #323232;
+    z-index: -1;
+  }
+  &:after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    transform: rotate(45deg);
+    background-color: #323232;
+    z-index: -1;
+  }
+}
